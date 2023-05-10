@@ -22,16 +22,6 @@ def icp(A, B, max_iterations=100, tolerance=1e-6):
         # Calculate the covariance matrix of the points
         H = np.dot((A - centroid_A).T, closest_points - centroid_B)
         
-        # Use Singular Value Decomposition (SVD) to calculate rotation and translation matrices
-        U, S, Vt = np.linalg.svd(H)
-        R = np.dot(Vt.T, U.T)
-        t = centroid_B.T - np.dot(R, centroid_A.T)
-        
-        # Update transformation matrix
-        T_new = np.eye(3)
-        T_new[:2, :2] = R
-        T_new[:2, 2] = t
-        
         # Check for convergence
         if np.allclose(T, T_new, rtol=tolerance):
             break
