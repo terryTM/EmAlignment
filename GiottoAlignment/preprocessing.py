@@ -38,7 +38,6 @@ cv2.destroyAllWindows()
 
 import cv2
 import numpy as np
-import pyntcloud
 from sklearn.neighbors import NearestNeighbors
 from sklearn.metrics import pairwise_distances
 from scipy.spatial.transform import Rotation as R
@@ -98,6 +97,7 @@ B = pointcloud2
 
 # Apply ICP to align A to B
 T = icp(A, B)
+print(T)
 
 # Apply transformation to A and plot the aligned point clouds
 A_aligned = np.hstack((A, np.ones((len(A), 1))))
