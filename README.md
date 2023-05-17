@@ -17,4 +17,4 @@ Preprocessing is conduced using filtering and thresholding using OpenCV. Then we
 
 To run alignment you can do:
 
-<code>python3 preprocessing.py<code>
+<code>python3 preprocessing.py</code>
