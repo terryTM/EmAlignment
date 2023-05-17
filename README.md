@@ -20,3 +20,5 @@ To run alignment you can do:
 <code>python3 preprocessing.py</code>
 
 To specify different file paths for mouse embryos, change the paths defined in line 115 and 116 of preprocessing.py
+
+Transformation and Rotation information is printed out as a $3 x 3$ homography transformation matrix.
