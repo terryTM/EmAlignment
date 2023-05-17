@@ -1,4 +1,4 @@
-# EmAlignment
+# Embroyo Alignment
 
 Run preprocessing.py to align two given mice.
 
