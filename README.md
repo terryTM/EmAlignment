@@ -12,3 +12,9 @@ Preprocessing is conduced using filtering and thresholding using OpenCV. Then we
 - scipy
 - pandas
 - matplotlib
+
+### Running Alignment
+
+To run alignment you can do:
+
+<code>python3 preprocessing.py<code>
