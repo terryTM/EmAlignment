@@ -18,3 +18,5 @@ Preprocessing is conduced using filtering and thresholding using OpenCV. Then we
 To run alignment you can do:
 
 <code>python3 preprocessing.py</code>
+
+To specify different file paths for mouse embryos, change the paths defined line 115 and 116 of preprocessing.py
